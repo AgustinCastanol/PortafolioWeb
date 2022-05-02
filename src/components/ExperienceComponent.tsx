@@ -43,6 +43,7 @@ export default function ExperienceComponent() {
         {/*End OF FRONTEND */}
         <div className="experience__backend">
           <h3>Backend Development</h3>
+          <div className="experience__content">
           <article className="experience__details">
             <BsPatchCheckFill className='' />
             <h4>NodeJS</h4>
@@ -73,6 +74,7 @@ export default function ExperienceComponent() {
               <h4>DenoJS</h4>
               <small className='text-light'>Basic</small>
             </article>
+            </div>
         </div>
       </div>
     </section>
