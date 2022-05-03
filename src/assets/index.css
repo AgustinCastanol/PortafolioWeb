@@ -46,6 +46,7 @@ body {
 
 }
 
+
 /*==================  General Styles  ==================*/
 .container {
   width: var(--container-width-lg);
@@ -66,7 +67,6 @@ h1 {
 
 section {
   margin-top: 8rem;
-  height: 100vh;
 }
 
 section>h2,
@@ -293,6 +293,55 @@ nav a.active {
   color: var(--color-light);
 }
 
+/*==================  ExperienceComponent ==================*/
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+}
+
+.experience__container>div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.experience__container>div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.experience__container>div h3 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.experience__details {
+  display: flex;
+  gap: 1rem;
+
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+  color: var(--color-primary);
+
+}
+
+
+
+
+
 
 /*==================  Media Queries ==================*/
 
@@ -323,6 +372,21 @@ nav a.active {
     margin: 1rem 0 1.5rem;
   }
 
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container>div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .experience__content {
+    padding: 1rem;
+  }
+
+
 }
 
 @media screen and (max-width:600px) {
@@ -342,20 +406,32 @@ nav a.active {
   .scroll__down {
     display: none;
   }
-  .about__me{
+
+  .about__me {
     width: 65%;
-    margin:0 auto 3rem;
+    margin: 0 auto 3rem;
 
   }
-  .about__cards{
-    grid-template-columns: 1fr 1fr;
-    gap:1rem;
-    }
-    .about__content{
-      text-align: center;
-    }
-    .about__content p {
-      margin: 1.5rem 0;
-    }
 
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+
+  .experience__container {
+    gap: 1rem;
+  }
+
+  .experience__container>div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
 }
