@@ -17,7 +17,7 @@ export default function AboutComponent (){
               </article>
               <article className="about__card">
                 <FiUsers className="about__icon"/>
-                <h5>Clientes</h5>
+                <h5>Clients</h5>
                 <small>200+ worldwide</small>
               </article>
               <article className="about__card">
