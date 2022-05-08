@@ -2,12 +2,17 @@ import {MdOutlineEmail} from 'react-icons/md'
 import { BsWhatsapp } from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
+import { LegacyRef} from 'react';
+
 export default function ContactComponent() {
-  const form =useRef();
-  const sendEmail= (e)=>{
-      e.preventDefault();
-      emailjs.sendForm('service_k9r3xl9','template_bmhbvxl',form.current,'40P4k4I586r-sk3M1')
-      e.target.reset()
+  const form =useRef() as LegacyRef<HTMLFormElement> | undefined;
+  let ref:HTMLFormElement
+  const sendEmail= (e:any)=>{
+  if(form !== null && form !== undefined && ref !== undefined){
+    e.preventDefault();
+    emailjs.sendForm('service_k9r3xl9','template_bmhbvxl',ref.current,'40P4k4I586r-sk3M1')
+  }
+  e.target.reset()
   }
   return (
     <section id="contact">
