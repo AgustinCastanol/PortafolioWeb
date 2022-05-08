@@ -18,7 +18,7 @@ export default function AboutComponent (){
               <article className="about__card">
                 <FiUsers className="about__icon"/>
                 <h5>Clients</h5>
-                <small>200+ worldwide</small>
+                <small>30+ worldwide</small>
               </article>
               <article className="about__card">
                 <VscFolderLibrary className="about__icon"/>
@@ -26,7 +26,8 @@ export default function AboutComponent (){
                 <small>20+ completed</small>
               </article>
             </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, cum voluptatibus! Quidem similique mollitia ut accusamus officia, quisquam, deleniti iusto animi provident eos minus sit libero incidunt ipsam, earum nesciunt?</p>
+            <p> 
+I'm a computer engineering student, expert in coding solutions. Diploma in full stack web development. Freelancer in design and development of dynamic and static web pages. Fan of minimalist design and efficiency. I love developing new knowledge to offer them in all the jobs I do.</p>
             <a href="#contact" className='btn btn-primary'>Let's Talk</a>
             </div>
           </div>
