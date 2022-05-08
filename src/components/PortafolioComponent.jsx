@@ -1,5 +1,5 @@
 import DATA from "../dataFromProjects"
-import IMG1 from "../assets/img/project1.jpg"
+import ALT from "../assets/img/project2.jpg"
 export default function PortafolioComponent() {
     return (
         <section id="portafolio">
@@ -10,7 +10,7 @@ export default function PortafolioComponent() {
                     return (
                         <article className="portafolio__items">
                             <div className="portafolio__item-image">
-                                <img src={IMG1} alt="" />
+                                <img src={e.image} alt={ALT} />
                             </div>
                             <h3>{e.title}</h3>
                             <div className="portafolio__item-cta">
