@@ -1,6 +1,6 @@
 import CTA from "./utils/CTA";
 import HeaderSocials from "./utils/HeaderSocials";
-import ME from "../assets/img/me.png"
+import ME from "../assets/img/me-about.png"
 export default function HeaderComponent(){    return (
     <header>
         <div className="container header__container">
@@ -11,7 +11,7 @@ export default function HeaderComponent(){    return (
             <HeaderSocials></HeaderSocials>
 
             <div className="me">
-                <img src={ME} alt="me" />
+                <img src="" alt="me" />
             </div>
             <a href="#contact" className="scroll__down">Scroll Down</a>
         </div>
