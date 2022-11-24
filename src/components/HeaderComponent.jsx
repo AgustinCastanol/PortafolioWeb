@@ -1,6 +1,6 @@
 import CTA from "./utils/CTA";
 import HeaderSocials from "./utils/HeaderSocials";
-import ME from "../assets/img/me-about.png"
+import ME from "../assets/img/sticker.png"
 export default function HeaderComponent(){    return (
     <header>
         <div className="container header__container">
