@@ -8,7 +8,7 @@ export default function ContactComponent() {
   const sendEmail= (e)=>{
   if(form !== null && form !== undefined){
     e.preventDefault();
-    emailjs.sendForm('service_k9r3xl9','template_bmhbvxl',form.current,'40P4k4I586r-sk3M1')
+    emailjs.sendForm('service_v0sxmyg','template_bmhbvxl',form.current,'40P4k4I586r-sk3M1')
   }
   e.target.reset()
   }

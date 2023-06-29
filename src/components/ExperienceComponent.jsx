@@ -11,38 +11,38 @@ export default function ExperienceComponent() {
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>HTML</h4>
+                <h4>VUE.JS</h4>
                 <small className='text-light'>Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>CSS</h4>
+                <h4>React.JS</h4>
                 <small className='text-light'>Intermediate</small></div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>JavaScript</h4>
-                <small className='text-light'>Experienced</small></div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
                 <h4>Typescript</h4>
+                <small className='text-light'>Experienced</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Next.JS</h4>
                 <small className='text-light'>Intermediate</small></div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>React/React-ts</h4>
+                <h4>Nuxt.JS</h4>
                 <small className='text-light'>Intermediate</small></div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>Vue/Vuex</h4>
+                <h4>Pinia/Redux</h4>
                 <small className='text-light'>Intermediate</small></div>
             </article>
           </div>
@@ -60,32 +60,73 @@ export default function ExperienceComponent() {
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>MongoDB</h4>
-                <small className='text-light'>Basic</small></div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
                 <h4>MySQL</h4>
-                <small className='text-light'>Basic</small></div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Firebase</h4>
-                <small className='text-light'>Intermediate</small></div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>C/C++</h4>
                 <small className='text-light'>Experienced</small></div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>DenoJS</h4>
+                <h4>PostgreSQL</h4>
+                <small className='text-light'>Experienced</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Microservices</h4>
+                <small className='text-light'>Intermediate</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Python</h4>
+                <small className='text-light'>Intermediate</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Nest.JS</h4>
                 <small className='text-light'>Basic</small></div>
+            </article>
+          </div>
+        </div>
+        <div className="experience__other">
+          <h3>Other Skills</h3>
+          <div className='experience__content'>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Nats</h4>
+                <small className='text-light'>Intermediate</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Redis</h4>
+                <small className='text-light'>Intermediate</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Docker</h4>
+                <small className='text-light'>Intermediate</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Nats</h4>
+                <small className='text-light'>Intermediate</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>PHP</h4>
+                <small className='text-light'>Basic</small></div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Wordpress</h4>
+                <small className='text-light'>Intermediate</small></div>
             </article>
           </div>
         </div>
