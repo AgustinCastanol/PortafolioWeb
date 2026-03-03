@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/*==================  Accessibility ==================*/
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  padding: 8px 16px;
+  z-index: 100;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /*==================  Variables ==================*/
 :root {
   --color-bg: #1f1f38;
@@ -43,9 +62,7 @@ body {
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(./img/bg-texture.png);
-
 }
-
 
 /*==================  General Styles  ==================*/
 .container {
@@ -69,28 +86,28 @@ section {
   margin-top: 8rem;
 }
 
-section>h2,
-section>h5 {
+section > h2,
+section > h5 {
   text-align: center;
-  color: var(--color-ligth)
+  color: var(--color-ligth);
 }
 
-section>h2 {
+section > h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
 }
 
 .text-light {
-  color: var(--color-ligth)
+  color: var(--color-ligth);
 }
 
 a {
   color: var(--color-primary);
-  transition: var(--transition)
+  transition: var(--transition);
 }
 
 a:hover {
-  color: var(--color-white)
+  color: var(--color-white);
 }
 
 .btn {
@@ -101,7 +118,7 @@ a:hover {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
-  transition: var(--transition)
+  transition: var(--transition);
 }
 
 .btn:hover {
@@ -112,7 +129,7 @@ a:hover {
 
 .btn-primary {
   background: var(--color-primary);
-  color: var(--color-bg)
+  color: var(--color-bg);
 }
 
 img {
@@ -174,12 +191,14 @@ header {
   overflow: hidden;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
-.me img{
+
+.me img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12rem 12rem 0 0;
 }
+
 /*Scroll Down*/
 .scroll__down {
   position: absolute;
@@ -218,27 +237,23 @@ nav a {
 
 nav a:hover {
   background: rgba(0, 0, 0, 0.3);
-
 }
 
 nav a.active {
   background: var(--color-primary);
   color: var(--color-bg);
-
 }
 
 /*==================  AboutComponent ==================*/
 .about__container {
   display: grid;
   gap: 15%;
-
 }
 
 .about__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-
 }
 
 .about__card {
@@ -260,7 +275,6 @@ nav a.active {
   color: var(--color-primary);
   font-size: 1.4rem;
   margin-bottom: 1rem;
-
 }
 
 .about__card h5 {
@@ -276,7 +290,8 @@ nav a.active {
   margin: 2 rem 0 2.6rem;
   color: var(--color-light);
 }
-.about__content a{
+
+.about__content a {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -287,8 +302,8 @@ nav a.active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-
 }
+
 /* quiero que el contenedor que tiene la clase experience__other este entre medio de las dos columnas */
 .experience__other {
   grid-column: 1/3;
@@ -298,15 +313,16 @@ nav a.active {
   flex-direction: column;
   /* quiero que tenga el mismo ancho de 1fr */
 }
-.experience__other >.experience__content{
+
+.experience__other > .experience__content {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   /* grid-template-columns: 1fr; */
   row-gap: 2rem;
 }
 
-.experience__container>div {
+.experience__container > div {
   background: var(--color-bg-variant);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
@@ -314,13 +330,13 @@ nav a.active {
   transition: var(--transition);
 }
 
-.experience__container>div:hover {
+.experience__container > div:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
 }
 
-.experience__container>div h3 {
+.experience__container > div h3 {
   text-align: center;
   color: var(--color-primary);
 }
@@ -334,13 +350,11 @@ nav a.active {
 .experience__details {
   display: flex;
   gap: 1rem;
-
 }
 
 .experience__details-icon {
   margin-top: 6px;
   color: var(--color-primary);
-
 }
 
 /*==================  Portafolio Component ==================*/
@@ -367,7 +381,6 @@ nav a.active {
 .portafolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
-
 }
 
 .portafolio__items h3 {
@@ -378,122 +391,126 @@ nav a.active {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-
 }
 
 /*==================  ContactComponent ==================*/
 
-  .container.contact__container{
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
-  }
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  gap: 12%;
+}
 
-  .contact__options{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  .contact__option{
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
 
-  }
-  .contact__option:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
-  }
+.contact__option {
+  width: 30%;
+  margin: 0 auto;
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
 
-  .contact__option-icon{
-    font: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
+.contact__option:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
 
-  .contact__option a{
-    margin-top:0.7rem ;
-    display: inline-block;
-    font-size: 0.8rem;
-  }
+.contact__option-icon {
+  font: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 
-  /* Form */
-  form{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  input,textarea{
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
-    resize: none;
-    color: var(--color-white);
-  }
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-white);
+}
+
 /*==================  Footer Component ==================*/
 
-  footer{
-    background: var(--color-primary);
-    padding: 3rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 7rem;
-  }
+footer {
+  background: var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+}
 
-  footer a{
-    color:var(--color-bg);
-  }
+footer a {
+  color: var(--color-bg);
+}
 
-  .footer__logo{
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    display: inline-block;
-  }
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
 
-  .permalinks{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin:0 auto 3rem;
-  }
-  
-  .footer__socials{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 4rem;
-  }
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+}
 
-  .footer__socials a{
-    background: var(--color-bg);
-    color:var(--color-white);
-    padding: 0.8rem;
-    border-radius: 0.7rem;
-    display: flex;
-    border: 1px solid transparent;
-  }
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
 
-  .footer__socials a :hover{
-    background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
-  }
+.footer__socials a {
+  background: var(--color-bg);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+}
 
-  .footer__copyright{
-    margin-bottom: 4rem;
-    color: var(--color-bg);
-  }
+.footer__socials a :hover {
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
+}
 
-  /*==================  Media Queries ==================*/
+.footer__copyright {
+  margin-bottom: 4rem;
+  color: var(--color-bg);
+}
 
-@media screen and (max-width:1024px) {
+/*==================  Media Queries ==================*/
+
+@media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
@@ -505,15 +522,18 @@ nav a.active {
   header {
     height: 68vh;
   }
-  .me{
-    padding:1rem;
+
+  .me {
+    padding: 1rem;
   }
-  .me img{
+
+  .me img {
     height: min-content;
     position: fixed;
-    top:-10%;
-    left:2%;
+    top: -10%;
+    left: 2%;
   }
+
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -526,7 +546,8 @@ nav a.active {
   .experience__container {
     grid-template-columns: 1fr;
   }
-  .experience__other >.experience__content{
+
+  .experience__other > .experience__content {
     width: 100%;
     display: grid;
     /* grid-template-columns: repeat(6,1fr); */
@@ -534,7 +555,7 @@ nav a.active {
     row-gap: 2rem;
   }
 
-  .experience__container>div {
+  .experience__container > div {
     width: 100%;
     padding: 2rem;
     margin: 0 auto;
@@ -543,24 +564,24 @@ nav a.active {
   .experience__content {
     padding: 1rem;
   }
-  .portafolio__container{
+
+  .portafolio__container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
 
-  .container.contact__container{
+  .container.contact__container {
     grid-template-columns: 1fr;
-    gap:2rem;
+    gap: 2rem;
   }
-
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
   }
 
-  section>h2 {
+  section > h2 {
     margin-bottom: 2rem;
   }
 
@@ -576,8 +597,6 @@ nav a.active {
   .scroll__down {
     display: none;
   }
-
-
 
   .about__cards {
     grid-template-columns: 1fr 1fr;
@@ -599,22 +618,26 @@ nav a.active {
     gap: 1rem;
   }
 
-  .experience__container>div {
+  .experience__container > div {
     width: 100%;
     padding: 2rem 1rem;
   }
-  .portafolio__container{
+
+  .portafolio__container {
     grid-template-columns: 1fr;
-    grid:1rem;
+    grid: 1rem;
   }
-  .container.contact__container{
+
+  .container.contact__container {
     width: var(--container-width-sm);
   }
-  .permalinks{
+
+  .permalinks {
     flex-direction: column;
     gap: 1.5rem;
   }
-  .footer__socials{
+
+  .footer__socials {
     margin-bottom: 2.6rem;
   }
 }
