@@ -1,0 +1,155 @@
+{
+  "profile": {
+    "name": "Agustín Castaño",
+    "tagline": "Senior Full Stack Engineer & Technical Lead",
+    "experience": "4+ Years of experience",
+    "clients": "30+ worldwide",
+    "projects": "20+ completed",
+    "bio": "Senior Full Stack Engineer and Technical Lead with 4+ years of experience delivering scalable, cloud-native web solutions. Passionate about clean architecture, performance optimization, and building high-impact products — from government platforms and B2B automation to award-winning e-commerce. Skilled in designing and leading end-to-end systems with a focus on reliability and minimalist design.",
+    "cta": "Let's Talk"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Bonvivir E-commerce",
+      "description": "IWC 2025 Best Wine E-commerce — improved web performance by 60% and led the frontend architecture.",
+      "image": "project-7",
+      "github": "",
+      "demo": "https://bonvivir.com/"
+    },
+    {
+      "id": 2,
+      "title": "AVE — B2B Automation Platform",
+      "description": "Enterprise B2B automation platform streamlining logistics and supplier workflows for scale.",
+      "image": "project-4",
+      "github": "",
+      "demo": "https://soyave.com/"
+    },
+    {
+      "id": 3,
+      "title": "VUCE — Government Backoffice",
+      "description": "Government backoffice system for Argentina's VUCE (Ventanilla Única de Comercio Exterior).",
+      "image": "project-5",
+      "github": "",
+      "demo": "https://ci.vuce.gob.ar/"
+    },
+    {
+      "id": 4,
+      "title": "Industrial IoT Integration",
+      "description": "Real-time industrial IoT data ingestion and monitoring platform integrating hardware sensors with cloud dashboards.",
+      "image": "project-1",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": 5,
+      "title": "Twitter Clone — Vue/Vuex & Firebase",
+      "description": "Full-featured Twitter clone built with Vue, Vuex state management, and Firebase real-time backend.",
+      "image": "project-2",
+      "github": "https://github.com/AgustinCastanol/Twitter-Clone-Vue",
+      "demo": ""
+    },
+    {
+      "id": 6,
+      "title": "REST API — Diaries with TypeScript",
+      "description": "Type-safe REST API for diary management built with TypeScript and Express.",
+      "image": "project-3",
+      "github": "https://github.com/AgustinCastanol/apiRestFromDiaries",
+      "demo": ""
+    }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "id": "frontend",
+        "title": "Frontend Development",
+        "skills": [
+          {
+            "name": "Vue.js / Nuxt.js",
+            "level": "Experienced"
+          },
+          {
+            "name": "React.js / Next.js",
+            "level": "Experienced"
+          },
+          {
+            "name": "TypeScript",
+            "level": "Experienced"
+          },
+          {
+            "name": "Pinia / Redux",
+            "level": "Intermediate"
+          },
+          {
+            "name": "Tailwind CSS / SCSS",
+            "level": "Experienced"
+          },
+          {
+            "name": "Vite / Webpack",
+            "level": "Intermediate"
+          }
+        ]
+      },
+      {
+        "id": "backend-cloud",
+        "title": "Backend & Cloud",
+        "skills": [
+          {
+            "name": "Node.js / Nest.js",
+            "level": "Experienced"
+          },
+          {
+            "name": "PostgreSQL / MySQL",
+            "level": "Experienced"
+          },
+          {
+            "name": "AWS Lambdas / Serverless",
+            "level": "Intermediate"
+          },
+          {
+            "name": "Google Cloud Associate Cloud Engineer",
+            "level": "Intermediate"
+          },
+          {
+            "name": "Microservices / NATS",
+            "level": "Intermediate"
+          },
+          {
+            "name": "Python / FastAPI",
+            "level": "Intermediate"
+          }
+        ]
+      },
+      {
+        "id": "devops-architecture",
+        "title": "DevOps & Architecture",
+        "skills": [
+          {
+            "name": "Docker / Kubernetes",
+            "level": "Intermediate"
+          },
+          {
+            "name": "CI/CD Pipelines",
+            "level": "Intermediate"
+          },
+          {
+            "name": "Git / GitHub Actions",
+            "level": "Experienced"
+          },
+          {
+            "name": "Redis / Caching",
+            "level": "Intermediate"
+          },
+          {
+            "name": "System Design & Clean Architecture",
+            "level": "Experienced"
+          },
+          {
+            "name": "Agile / Technical Leadership",
+            "level": "Experienced"
+          }
+        ]
+      }
+    ]
+  }
+}

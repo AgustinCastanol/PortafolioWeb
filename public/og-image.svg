@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#5f27cd" text-anchor="middle">Agustín Castañol</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="40" fill="#a0a0a0" text-anchor="middle">Full Stack Developer</text>
+  <rect x="200" y="420" width="800" height="5" fill="#5f27cd"/>
+</svg>
