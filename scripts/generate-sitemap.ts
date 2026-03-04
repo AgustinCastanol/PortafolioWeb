@@ -51,7 +51,7 @@ const generateSitemap = () => {
 ${sitemapEntries}
 </urlset>`;
 
-  const outputPath = path.resolve(__dirname, 'public/sitemap.xml');
+  const outputPath = path.resolve(__dirname, '../public/sitemap.xml');
   fs.writeFileSync(outputPath, sitemap);
   console.log(`Sitemap generated at ${outputPath}`);
 };
