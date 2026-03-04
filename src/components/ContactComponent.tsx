@@ -1,7 +1,7 @@
 import { useRef, type FormEvent, type RefObject } from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
 import { BsWhatsapp } from 'react-icons/bs';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const ContactComponent: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
