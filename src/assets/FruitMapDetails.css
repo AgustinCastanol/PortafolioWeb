@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Stardew Valley Theme specifically for Fruit Map */
+.stardew-theme {
+  border: 4px solid #8e5534;
+  background-color: #f4d084;
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 0 4px #e5a952,
+    inset 0 0 0 8px #bd7c36;
+  font-family: 'VT323', monospace;
+  color: #4a2f1d;
+  position: relative;
+  overflow: hidden;
+}
+
+.stardew-theme h3 {
+  color: #4a2f1d;
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.stardew-theme .portafolio__item-description {
+  color: #4a2f1d;
+  font-size: 1.2rem;
+}
+
+.stardew-theme .btn {
+  background-color: #5c9945;
+  color: white;
+  border: 2px solid #2e591c;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  border-radius: 0;
+  text-shadow: 1px 1px 0 #000;
+  box-shadow:
+    inset -2px -2px 0 rgba(0, 0, 0, 0.2),
+    inset 2px 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.stardew-theme .btn:hover {
+  background-color: #6eb553;
+  color: white;
+}
+
+/* Modal specific styles */
+.stardew-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.stardew-modal {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stardew-modal .btn-close {
+  background-color: #d14141;
+  border-color: #8c1e1e;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.stardew-modal .btn-close:hover {
+  background-color: #e55353;
+}
+
+/* View transitions */
+.vt-card {
+  view-transition-name: fruit-map-card;
+}
+
+::view-transition-old(fruit-map-card),
+::view-transition-new(fruit-map-card) {
+  animation-duration: 0.4s;
+}

@@ -56,6 +56,14 @@
       "image": "project-3",
       "github": "https://github.com/AgustinCastanol/apiRestFromDiaries",
       "demo": ""
+    },
+    {
+      "id": 7,
+      "title": "Fruit Map",
+      "description": "Interactive fruit map application built with Svelte SSR, featuring a Stardew Valley aesthetic and View Transitions.",
+      "image": "project-8",
+      "github": "",
+      "demo": ""
     }
   ],
   "skills": {
