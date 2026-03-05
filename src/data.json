@@ -37,7 +37,7 @@
       "id": 4,
       "title": "Industrial IoT Integration",
       "description": "Real-time industrial IoT data ingestion and monitoring platform integrating hardware sensors with cloud dashboards.",
-      "image": "project-1",
+      "image": "project-2",
       "github": "",
       "demo": ""
     },
@@ -45,7 +45,7 @@
       "id": 5,
       "title": "Twitter Clone — Vue/Vuex & Firebase",
       "description": "Full-featured Twitter clone built with Vue, Vuex state management, and Firebase real-time backend.",
-      "image": "project-2",
+      "image": "project-1",
       "github": "https://github.com/AgustinCastanol/Twitter-Clone-Vue",
       "demo": ""
     },
