@@ -9,31 +9,32 @@
     inset 0 0 0 4px #e5a952,
     inset 0 0 0 8px #bd7c36;
   font-family: 'VT323', monospace;
-  color: #4a2f1d;
+  color: var(--color-bg);
   position: relative;
   overflow: hidden;
 }
 
 .stardew-theme h3 {
-  color: #4a2f1d;
+  color: var(--color-white);
   font-family: 'VT323', monospace;
   font-size: 2rem;
-  text-shadow: 1px 1px 0 #fff;
+  text-shadow: 1px 1px 0 var(--color-bg);
 }
 
 .stardew-theme .portafolio__item-description {
-  color: #4a2f1d;
+  color: var(--color-white);
+  text-shadow: 1px 1px 0 var(--color-bg);
   font-size: 1.2rem;
 }
 
 .stardew-theme .btn {
   background-color: #5c9945;
-  color: white;
+  color: var(--color-white);
   border: 2px solid #2e591c;
   font-family: 'VT323', monospace;
   font-size: 1.2rem;
   border-radius: 0;
-  text-shadow: 1px 1px 0 #000;
+  text-shadow: 1px 1px 0 var(--color-bg);
   box-shadow:
     inset -2px -2px 0 rgba(0, 0, 0, 0.2),
     inset 2px 2px 0 rgba(255, 255, 255, 0.4);
@@ -41,7 +42,7 @@
 
 .stardew-theme .btn:hover {
   background-color: #6eb553;
-  color: white;
+  color: var(--color-white);
 }
 
 /* Modal specific styles */

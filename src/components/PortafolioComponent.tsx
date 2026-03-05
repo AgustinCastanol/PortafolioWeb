@@ -113,7 +113,6 @@ const PortafolioComponent: React.FC = () => {
               style={{
                 marginTop: '1rem',
                 padding: '1rem',
-                backgroundColor: '#e5a952',
                 borderRadius: '4px',
                 border: '2px solid #bd7c36',
               }}
@@ -126,12 +125,10 @@ const PortafolioComponent: React.FC = () => {
             </div>
             <div className="portafolio__item-cta" style={{ marginTop: '1rem' }}>
               <a
-                href="#"
+                href="https://frutiar.acastanol.com.ar"
                 className="btn btn-primary"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert('Fruit Map App launched!');
-                }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Play / Demo
               </a>
